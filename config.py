@@ -167,6 +167,18 @@ FINGER_COLORS_RGB: dict[str, tuple[int, int, int]] = {
     "THUMB":  (192, 132, 252),
 }
 
+# Biomechanical TAM ceiling per finger (degrees).
+# Values derived from ASSH reference ranges and anatomical literature.
+# Applied as a hard clamp after EMA + Kalman filtering to prevent
+# camera-noise artifacts from producing physically impossible readings.
+TAM_CEILING: dict[str, float] = {
+    "INDEX":  270.0,
+    "MIDDLE": 270.0,
+    "RING":   270.0,
+    "PINKY":  270.0,
+    "THUMB":  130.0,
+}
+
 # =============================================================================
 # 7. LOGGING SYSTEM
 # =============================================================================

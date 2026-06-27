@@ -19,6 +19,8 @@ from typing import Any, Dict, List
 
 import numpy as np
 
+import config
+
 # =============================================================================
 # LANDMARK INDICES
 # =============================================================================
@@ -366,6 +368,11 @@ class DigitalGoniometer:
             # distinction. TAM measures total range of motion regardless of hand side.
             tam = self.total_active_motion(abs(mcp_angle), abs(pip_angle), abs(dip_angle))
 
+            # Biomechanical ceiling — clamp TAM to the anatomical maximum for this finger
+            ceiling = config.TAM_CEILING.get(finger_name, 270.0)
+            if tam > ceiling:
+                tam = ceiling
+
             result[finger_name] = {
                 "MCP": round(mcp_angle, 2),
                 "PIP": round(pip_angle, 2),
@@ -377,6 +384,11 @@ class DigitalGoniometer:
         thumb_mcp = round(self.thumb_mcp_flex(landmarks, normal), 2)
         thumb_ip  = round(self.thumb_ip_flex(landmarks, normal), 2)
         thumb_tam = self.total_active_motion_thumb(abs(thumb_mcp), abs(thumb_ip))
+
+        # Biomechanical ceiling — clamp thumb TAM to anatomical maximum
+        ceiling_thumb = config.TAM_CEILING.get("THUMB", 130.0)
+        if thumb_tam > ceiling_thumb:
+            thumb_tam = ceiling_thumb
 
         result["THUMB"] = {
             "MCP": thumb_mcp,
