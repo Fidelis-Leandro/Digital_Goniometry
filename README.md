@@ -1,7 +1,7 @@
-# Digital Hand Goniometry
+# Computer Vision-Based Hand Kinematic Assessment
 
 <div align="center">
-  <img src="screenshot.png" alt="Digital Goniometry Interface" width="800"/>
+  <img src="screenshot.png" alt="Computer Vision-Based Hand Kinematic Assessment Interface" width="800"/>
 </div>
 
 > **Real-time goniometric measurement system for functional assessment of hand fingers, using computer vision and desktop interface.**
@@ -33,7 +33,7 @@
 
 ## About the Project
 
-**Digital Hand Goniometry** is a clinical desktop application developed for healthcare professionals — physiotherapists, occupational therapists, and doctors — who need to accurately measure the flexion/extension angles of the hand finger joints in real time.
+**Computer Vision-Based Hand Kinematic Assessment** is a clinical desktop application developed for healthcare professionals — physiotherapists, occupational therapists, and doctors — who need to accurately measure the flexion/extension angles of the hand finger joints in real time.
 
 The system uses the computer's camera, without the need for any additional physical equipment (such as the traditional manual goniometer), and automatically detects the anatomical landmarks of the hand to calculate the joint angles of the **MCP**, **PIP**, **DIP** joints, and, for the thumb, **IP** and **ABD**.
 
@@ -146,8 +146,8 @@ The system is built on a **Producer-Consumer pattern with Qt Workers**, ensuring
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/digital_goniometry.git
-cd digital_goniometry
+git clone https://github.com/your-username/computer-vision-based-hand-kinematic-assessment.git
+cd computer-vision-based-hand-kinematic-assessment
 ```
 
 ### 2. Create and activate a virtual environment
@@ -188,7 +188,7 @@ python app_pyqt.py
 ## Project Structure
 
 ```
-digital_goniometry/
+computer-vision-based-hand-kinematic-assessment/
 |
 +-- app_pyqt.py                  # Main entry point (PyQt6)
 +-- config.py                    # Centralized configuration (global params)
