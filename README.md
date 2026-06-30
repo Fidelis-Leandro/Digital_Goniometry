@@ -4,8 +4,8 @@
   <img src="screenshot.png" alt="Computer Vision-Based Hand Kinematic Assessment Interface" width="800"/>
 </div>
 
-> **Real-time goniometric measurement system for functional assessment of hand fingers, using computer vision and desktop interface.**
-
+> **Real-time computer vision-based hand kinematic assessment system for functional finger analysis, featuring an integrated desktop interface.**
+> 
 [![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
 [![PyQt6](https://img.shields.io/badge/PyQt6-6.6%2B-41CD52?style=flat-square&logo=qt&logoColor=white)](https://www.riverbankcomputing.com/software/pyqt/)
 [![MediaPipe](https://img.shields.io/badge/MediaPipe-0.10%2B-0097A7?style=flat-square&logo=google&logoColor=white)](https://mediapipe.dev/)
