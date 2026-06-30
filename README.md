@@ -4,7 +4,7 @@
   <img src="screenshot.png" alt="Computer Vision-Based Hand Kinematic Assessment Interface" width="800"/>
 </div>
 
-> **Real-time computer vision-based hand kinematic assessment system for functional finger analysis, featuring an integrated desktop interface.**
+> **Real-time markerless finger kinematic assessment with automated clinical reporting — single RGB webcam, no specialized hardware required.**
 > 
 [![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
 [![PyQt6](https://img.shields.io/badge/PyQt6-6.6%2B-41CD52?style=flat-square&logo=qt&logoColor=white)](https://www.riverbankcomputing.com/software/pyqt/)
